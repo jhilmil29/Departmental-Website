@@ -1,0 +1,78 @@
+<%- include ("./partials/header") %>
+
+<h1>Landing</h1>
+
+<div class="container">
+    <h1>News in highlightes</h1>
+    <!-- <img class="slideshow" src="" alt="img1">
+    <img class="slideshow" src="" alt="img2">
+    <img class="slideshow" src="" alt="img3">
+    <img class="slideshow" src="" alt="img4"> -->
+    <div class="slideshow">
+        <h4>NEWS 1</h4>
+        <div class="row">
+            <div class="column">
+                <p>hello</p>
+            </div>
+            <div class="column">
+                <p>hello</p>
+            </div>
+        </div>
+    </div>
+    <div class="slideshow">
+        <h4>NEWS 2</h4>
+        <div class="row">
+            <div class="column">
+                <p>hello</p>
+                <img src="" alt="img 1">
+            </div>
+            <div class="column">
+                <p>hello</p>
+            </div>
+        </div>
+    </div>
+    <div class="slideshow">
+        <h4>NEWS 3</h4>
+        <div class="row">
+            <div class="column">
+                <p>hello</p>
+            </div>
+            <div class="column">
+                <p>hello</p>
+            </div>
+        </div>
+    </div>
+    <div class="slideshow">
+        <h4>NEWS 4</h4>
+        <div class="row">
+            <div class="column">
+                <p>hello</p>
+            </div>
+            <div class="column">
+                <p>hello</p>
+            </div>
+        </div>
+    </div>
+    
+
+</div>
+
+
+<script>
+    var slideIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("slideshow");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1}
+  x[slideIndex-1].style.display = "block";
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+<%- include ("./partials/footer") %>

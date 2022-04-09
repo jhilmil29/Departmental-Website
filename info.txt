@@ -1,0 +1,28 @@
+Virginia:
+about, people, research, news/events, employment, info for, programs, give
+
+Massachusetts (Amherst):
+about us, faculty, research, diversity, ug stu, grad stu, alumni & community, online course, news
+
+Massachusetts (Cambridge):
+academics, research, people, community & equity, news & events, about
+
+Nanyang (Singapore):
+achievements, alumni, announcements, education, giving, partnership, research
+
+==============================================
+NAVBAR:
+academics, research, people, alumni, news & events, about
+
+NEWS & EVENTS:
+spotlights, talk & events, cultural/academic/misc events calendars, honors & awards, press release
+
+PEOPLE:
+leadership, faculty (by heirarchy/A-Z), research staff/lab assistant, administrative staff
+
+RESEARCH:
+research areas, labs' description (links, use, whatfor), highlighted researches, highlighted students
+
+
+
+
