@@ -1,7 +1,18 @@
 const express    = require('express'),
       app        = express(),
-      bodyParser = require('body-parser');
+      path       = require('path'),
+      bodyParser = require('body-parser')
+      mongoose   = require('mongoose'); 
 
+
+mongoose.connect('mongodb://localhost:27017/deptWebApp')
+    .then(() => {
+        console.log("Connected to 'deptWebApp' DB!")
+    })
+    .catch(err => {
+        console.log("Connection to DB failed!")
+        console.log(err)
+    })
 
 //Requiring Routes
 const indexRoutes     = require('./routes/index'),
@@ -13,7 +24,8 @@ const indexRoutes     = require('./routes/index'),
       researchRoutes  = require('./routes/research');
 
 app.use(bodyParser.urlencoded({extended: true}));
-app.set("view engine", "ejs");
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'ejs');
 app.use(express.static(__dirname + "/public"));
 
 
