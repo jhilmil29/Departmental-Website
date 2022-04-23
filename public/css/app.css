@@ -116,6 +116,11 @@ a.nav-link{
     padding: 20px;
 }
 
+/*    ADD CSS BELOW!    */
+
+
+
+
 
 
 
@@ -166,7 +171,7 @@ hr.foot:before {
 }
 
 .fContainer p{
-    margin-top: 0;
+    margin: 0;
     padding-top: 0;
 }
 
