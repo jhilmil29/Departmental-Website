@@ -23,21 +23,23 @@ const facultySchema = new mongoose.Schema({
     },
     dept: {
         type: String,
-        enum: []
+        default: 'Department of Computer and Communiacation Engineering'
     },
     school: {
         type: String,
-        enum: []
+        default: 'School of Computing & Information Technology'
     },
     email: {
         type: String,
-        required: true
+        required: true,
+        unique:true
     },
     phone: {
         type: Number,
         required: true,
         min: 1000000000,
-        max: 9999999999
+        max: 9999999999,
+        unique: true
     },
     workStn: {
         type: String

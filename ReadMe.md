@@ -159,7 +159,7 @@ MongoDB (Schemas)
         - firstName
         - lastName
     - Post
-    - Department and School
+    - Department and School (fixed to CCE and SCIT respectively)
     - Contact details
         - email
         - phone number
