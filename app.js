@@ -1,10 +1,13 @@
 const express    = require('express'),
       app        = express(),
       path       = require('path'),
-      bodyParser = require('body-parser')
-      mongoose   = require('mongoose'); 
+      bodyParser = require('body-parser'),
+      mongoose   = require('mongoose');
 
+//Requiring DB Models
+const Faculty = require('./models/faculty');
 
+//DB Configurations
 mongoose.connect('mongodb://localhost:27017/deptWebApp')
     .then(() => {
         console.log("Connected to 'deptWebApp' DB!")
@@ -23,6 +26,8 @@ const indexRoutes     = require('./routes/index'),
       peopleRoutes    = require('./routes/people'),
       researchRoutes  = require('./routes/research');
 
+
+//Configuration
 app.use(bodyParser.urlencoded({extended: true}));
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
