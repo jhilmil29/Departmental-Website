@@ -107,10 +107,9 @@ Web Pages
     
     - Programs List
     - Student Resources
-    - Announcements (Upcoming Exam schedule)/Examination Section
-    - Lab Schedule
-    - Academic calendar
-    - placement (also the details  placed students) (link to dedicated)
+    - Announcements (Upcoming Exam schedule/Examination Section/Academic calendar)
+    - Course Schedule
+    - placement (also the details of placed students) (link to dedicated)
 
 4) Alumni PAGE => '/alumni'
     

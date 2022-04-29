@@ -13,25 +13,6 @@ mongoose.connect('mongodb://localhost:27017/deptWebApp')
         console.log(err)
     })
 
-// const f = new Faculty({
-//     uid: 'muj00001',
-//     suffix: 'Mr.',
-//     fName: 'ABC01',
-//     lName: 'XYZ01',
-//     post: 'Associate Professor',
-//     email: 'abc_xyz01@muj.edu',
-//     phone: 8978455631,
-//     wrkstn: 'AB1 2F 018'
-// });
-
-// f.save()
-//     .then(f => {
-//         console.log(f)
-//     })
-//     .catch(err => {
-//         console.log(err)
-//     })
-
 const seedData = [
     {
         uid: 'muj00001',
@@ -41,7 +22,7 @@ const seedData = [
         post: 'Associate Professor',
         email: 'abc_xyz01@muj.edu',
         phone: 8978455631,
-        wrkstn: 'AB1 2F 018'
+        wrkstn: 'AB1 3F 018'
     },
     {
         uid: 'muj00002',
@@ -51,7 +32,7 @@ const seedData = [
         post: 'Associate Professor',
         email: 'abc_xyz02@muj.edu',
         phone: 7412589635,
-        wrkstn: 'AB1 2F 002'
+        wrkstn: 'AB1 3F 002'
     },
     {
         uid: 'muj00003',
@@ -61,7 +42,7 @@ const seedData = [
         post: 'Associate Professor',
         email: 'abc_xyz03@muj.edu',
         phone: 8956231245,
-        wrkstn: 'AB1 2F 008'
+        wrkstn: 'AB1 3F 008'
     },
     {
         uid: 'muj00004',
@@ -71,7 +52,7 @@ const seedData = [
         post: 'Associate Professor',
         email: 'abc_xyz04@muj.edu',
         phone: 8954786512,
-        wrkstn: 'AB1 2F 022'
+        wrkstn: 'AB1 3F 022'
     },
     {
         uid: 'muj00005',
@@ -81,7 +62,7 @@ const seedData = [
         post: 'Associate Professor',
         email: 'abc_xyz05@muj.edu',
         phone: 8754568925,
-        wrkstn: 'AB1 2F 015'
+        wrkstn: 'AB1 3F 015'
     },
     {
         uid: 'muj00006',
@@ -91,7 +72,7 @@ const seedData = [
         post: 'Associate Professor',
         email: 'abc_xyz06@muj.edu',
         phone: 6698547125,
-        wrkstn: 'AB1 2F 010'
+        wrkstn: 'AB1 3F 010'
     }
 ]
 
