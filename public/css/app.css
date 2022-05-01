@@ -1,3 +1,6 @@
+/* background-color: rgba(255, 19, 19, 0.87); */
+/* background-color: rgba(218, 0, 0, 0.925); */
+
 body{
     background-color: white;
     margin: 0;
@@ -7,7 +10,6 @@ body{
 
 header h1, header h2, header p{
     font-family: 'Beau Rivage', cursive;
-    margin: 18px;
     display: inline;
     font-weight: 700;
 }
@@ -17,177 +19,18 @@ h1 a, h2 a{
     text-decoration: none;
 }
 
-.navbar {
-    overflow: hidden;
+.bgcol{
     background-color: rgba(255, 19, 19, 0.87);
-    padding: 8px;
-    width: auto;
-}
-
-.navbar a{
-    float: left;
-    font-size: 16px;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-.navbar .navbar-nav{
-    margin: 0;
-}
-
-a.nav-link{
-    padding: 0;
-}
-
-.dropdown {
-    float: left;
-    overflow: hidden;
-}
-
-.dropdown .dropbtn {
-    font-size: 16px;  
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-}
-
-.navbar a:hover, .dropdown:hover .dropbtn{
-    background-color: rgba(218, 0, 0, 0.925);
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-.dropdown-content a:hover {
-    background-color: #ddd;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.column{
-    float: left;
-    width: 33.33%;
-}
-
-.container{
-    background:rgba(255, 19, 19, 0.87);
-    margin: 20px;
-    padding: 10px;
-    border-radius: 18px;
     color: white;
 }
 
-.container h1{
-    font-weight: 400;
-    font-style: italic;
-}
-
-.slideshow{
-    padding: 20px;
-}
-
-/*    ADD CSS BELOW!    */
-
-
-
-
-
-
-
-
-
-
-
-
-footer {
-    /* position: absolute; */
-    bottom:0;
-    width:100%;
-    background:rgba(255, 19, 19, 0.87);
- }
-
-footer img{
-    width: 25%;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-hr.foot {
-    overflow: visible;
-    height: 30px;
-    border-style: solid;
-    border-color: rgb(255, 255, 255);
-    border-width: 1px 0 0 0;
-    border-radius: 20px;
-    width: 92%;
-    margin-bottom: 0;
-}
-hr.foot:before {
-    display: block;
-    content: "";
-    height: 30px;
-    margin-top: -31px;
-    border-style: solid;
-    border-color: rgb(255, 255, 255);
-    border-width: 0 0 1px 0;
-    border-radius: 20px;
-}
-
-.fContainer{
-    margin: 0 10%;
-    color: white;
-    text-align: center;
-}
-
-.fContainer p{
-    margin: 0;
-    padding-top: 0;
-}
-
-footer ul li{
-    float: left;
-    width: 20%;
-    text-align: left;
-    margin-bottom: 8px;
-}
 
 footer li a:link, footer li a:visited{
     text-decoration: none;
     color: white;
 }
 
-footer p a:link, footer p a:visited{
+footer a:link, footer a:visited{
     text-decoration: none;
     color: white;
     font-size: 1.1em;

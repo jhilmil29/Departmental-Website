@@ -84,7 +84,7 @@ Web Pages
     
     - Navbar                                                                   (header)
     - News / highlights / events                                               (section 1)
-    - Programs, courses and scope (grad + uGrad)                               (section 2)
+    - Program overview, courses and scope (grad + uGrad)                       (section 2)
     - Facilities (achievenemts, placements, higher edu, industrial visits)     (section 3)
     - Alumni corner                                                            (section 4)
     - About                                                                    (section 5)
@@ -105,8 +105,9 @@ Web Pages
     
 3) Academics PAGE => '/academics'
     
+    - Overview, career opportunities, 
     - Programs List
-    - Student Resources
+    - Student Resources (handouts, )
     - Announcements (Upcoming Exam schedule/Examination Section/Academic calendar)
     - Course Schedule
     - placement (also the details of placed students) (link to dedicated)
