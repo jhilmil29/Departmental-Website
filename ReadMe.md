@@ -95,7 +95,7 @@ Web Pages
 
 2) About PAGE => '/about'
     
-    - Overview
+    - Overview of MUJ
     - Diversity
     - Board Of Department
     - Vision,Mission & Values
