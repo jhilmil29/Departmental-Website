@@ -106,8 +106,7 @@ Web Pages
 3) Academics PAGE => '/academics'
     
     - Overview, career opportunities, 
-    - Programs List
-    - Student Resources (handouts, )
+    - Programs' List [include Student Resources inside (handouts, outcomes, credit details, etc.)]
     - Announcements (Upcoming Exam schedule/Examination Section/Academic calendar)
     - Course Schedule
     - placement (also the details of placed students) (link to dedicated)
