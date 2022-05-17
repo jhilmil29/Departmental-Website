@@ -130,11 +130,10 @@ Web Pages
     - leadership
     - faculty (by heirarchy/A-Z)
     - research staff/lab assistant
-    - administrative staff
 
 7) Research PAGE => '/research'
     
-    - research areas
+    - research areas and expertise
     - highlighted researches
     - highlighted students
     - labs' description (links, use, whatfor) 
@@ -173,6 +172,7 @@ MongoDB (Schemas)
         - area of expertise
         - area of research
         - work experience
+        - 
     - Research
         - completed
         - ongoing

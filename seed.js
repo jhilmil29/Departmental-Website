@@ -13,6 +13,7 @@ mongoose.connect('mongodb://localhost:27017/deptWebApp')
         console.log(err)
     })
 
+
 const seedData = [
     {
         uid: 'muj00001',
@@ -22,17 +23,17 @@ const seedData = [
         post: 'Associate Professor',
         email: 'abc_xyz01@muj.edu',
         phone: 8978455631,
-        wrkstn: 'AB1 3F 018'
+        workStn: 'AB1 3F 018'
     },
     {
         uid: 'muj00002',
         suffix: 'Dr.',
         fName: 'ABC02',
         lName: 'XYZ02',
-        post: 'Associate Professor',
+        post: 'Assistant Professor',
         email: 'abc_xyz02@muj.edu',
         phone: 7412589635,
-        wrkstn: 'AB1 3F 002'
+        workStn: 'AB1 3F 002'
     },
     {
         uid: 'muj00003',
@@ -42,7 +43,7 @@ const seedData = [
         post: 'Associate Professor',
         email: 'abc_xyz03@muj.edu',
         phone: 8956231245,
-        wrkstn: 'AB1 3F 008'
+        workStn: 'AB1 3F 008'
     },
     {
         uid: 'muj00004',
@@ -52,7 +53,7 @@ const seedData = [
         post: 'Associate Professor',
         email: 'abc_xyz04@muj.edu',
         phone: 8954786512,
-        wrkstn: 'AB1 3F 022'
+        workStn: 'AB1 3F 022'
     },
     {
         uid: 'muj00005',
@@ -62,7 +63,7 @@ const seedData = [
         post: 'Associate Professor',
         email: 'abc_xyz05@muj.edu',
         phone: 8754568925,
-        wrkstn: 'AB1 3F 015'
+        workStn: 'AB1 3F 015'
     },
     {
         uid: 'muj00006',
@@ -72,14 +73,19 @@ const seedData = [
         post: 'Associate Professor',
         email: 'abc_xyz06@muj.edu',
         phone: 6698547125,
-        wrkstn: 'AB1 3F 010'
+        workStn: 'AB1 3F 010'
     }
 ]
 
-Faculty.insertMany(seedData)
+const seedDB = async () => {
+    await Faculty.deleteMany({})
+    Faculty.insertMany(seedData)
     .then(res => {
         console.log(res)
     })
     .catch(err => {
         console.log(err)
     })
+}
+
+seedDB();

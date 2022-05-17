@@ -1,0 +1,227 @@
+<%- include ("../partials/header") %>
+
+<div class="container my-3 mb-5">
+    <div class="card">
+        <div class="row g-0">
+            <div class="col-md-8">
+                <div class="card-body">
+                  <h2 class="card-title"><%= `${faculty.suffix} ${faculty.fName} ${faculty.lName}` %></h2>
+                  <p class="card-text my-0"><small class="text-muted"><%= `${faculty.post}, ${faculty.dept}` %> </small></p>
+                  <p class="card-text my-0"><small class="text-muted"><%= faculty.school %> </small></p>
+                  <p class="card-text mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti quas nulla aspernatur labore quidem unde quod, dolor, officiis suscipit omnis sunt ut repellat exercitationem quae laborum architecto illo. Possimus, libero?</p>
+                  <p class="card-text">
+                    <small class="text-muted">
+                        <ul>
+                            <li><%= faculty.email %> </li>
+                            <li>+91-<%= faculty.phone %> </li>
+                            <li><%= faculty.workStn %> </li>
+                        </ul>
+                    </small>
+                  </p>
+                  <a class="btn btn-outline-danger " href="/people/<%=faculty._id%>/edit" role="button">Edit</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <img src="../images/demo.jpg" style="height: 300px; width: 250px;" class="img-fluid rounded float-end" alt="...">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="card mx-3 mb-5">
+    <h4 class="card-header">Academic Details</h4>
+    <div class="card-body">
+      <h5 class="card-title">Academic Roles and Responsibilities</h5>
+      <p class="card-text" style="text-align: justify;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas vitae placeat ea temporibus, aut excepturi deleniti corporis consequuntur dolorem consequatur amet adipisci repudiandae recusandae rerum omnis maiores nisi quibusdam. Illo illum perspiciatis blanditiis harum iste pariatur esse, saepe natus dolorem.</p>
+
+      <div class="row">
+
+        <div class="col-6 my-2">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Subjects Taught</h5>
+              <p class="card-text">
+                  <table class="table">
+										<thead><tr>
+											<td>Course Name</td>
+											<td>Course Code</td>
+											<td>Semester</td>
+										</tr></thead>
+										<tbody>
+											<tr>
+												<td>abcd</td>
+												<td>cc1234</td>
+												<td>III</td>
+											</tr>
+											<tr>
+												<td>abcd</td>
+												<td>cc1234</td>
+												<td>VI</td>
+											</tr>
+										</tbody>
+									</table>
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-6 my-2">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Qualifications</h5>
+              <p class="card-text">
+								<table class="table">
+									<thead><tr>
+										<td>Degree</td>
+										<td>Specialization</td>
+										<td>Institute</td>
+										<td>Year of passing</td>
+									</tr></thead>
+									<tbody>
+										<tr>
+											<td>abc</td>
+											<td>XYZ</td>
+											<td>PQR</td>
+											<td>2012</td>
+										</tr>
+										<tr>
+											<td>def</td>
+											<td>ZYX</td>
+											<td>STU</td>
+											<td>2015</td>
+										</tr>
+									</tbody>
+								</table>
+							</p>
+            </div>
+          </div>
+        </div>
+
+				<div class="col-12 my-2">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Experience</h5>
+              <p class="card-text">
+								<table class="table">
+									<thead><tr>
+										<td>Institute / Organization</td>
+										<td>Designation</td>
+										<td>Role</td>
+										<td>Tenure</td>
+									</tr></thead>
+									<tbody>
+										<tr>
+											<td>abc</td>
+											<td>XYZ</td>
+											<td>PQR</td>
+											<td>2020 to till date</td>
+										</tr>
+										<tr>
+											<td>def</td>
+											<td>ZYX</td>
+											<td>STU</td>
+											<td>2015 - 2020</td>
+										</tr>
+									</tbody>
+								</table>
+							</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+	<div class="card mx-3 mb-5">
+    <h4 class="card-header">Expertise and Interest</h4>
+    <div class="card-body">
+      <h5 class="card-title">Area of Interest, Expertise and Research</h5>
+      <p class="card-text" style="text-align: justify;">
+			<ol>
+				<li>Area of Interest: XYZ</li>
+				<li>Area of Expretise: XYZ</li>
+				<li>Area of Research: XYZ</li>
+			</ol>
+			</p>
+
+      <div class="row">
+
+        <div class="col-12 my-2">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Work Experiance</h5>
+              <p class="card-text">
+                  <table class="table">
+										<thead><tr>
+											<td>Organization</td>
+											<td>Role</td>
+											<td>Tenure</td>
+										</tr></thead>
+										<tbody>
+											<tr>
+												<td>XYZ pvt. ltd., BLR</td>
+												<td>zyx</td>
+												<td>2015-2019</td>
+											</tr>
+										</tbody>
+									</table>
+              </p>
+            </div>
+          </div>
+        </div>
+        
+				<div class="col-12 my-2">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Affiliates and Contributions</h5>
+              <p class="card-text">
+								<ul>
+									<li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, impedit.</li>
+									<li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, impedit.</li>
+									<li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, impedit.</li>
+								</ul>
+							</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+	<div class="card mx-3 mb-5">
+		<h4 class="card-header">Research</h4>
+		<div class="card-body">
+				
+			<div class="row row-cols-1 row-cols-md-4 g-4">
+				<div class="col">
+					<div class="card">
+						<div class="card-body">
+							<h5 class="card-title">Research Title</h5>
+							<p class="card-text">name_of_publishing_org</p>
+							<p class="text-muted"><small>Date and Authors' list</small></p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col">
+					<div class="card">
+						<div class="card-body">
+							<h5 class="card-title">Research Title</h5>
+							<p class="card-text">name_of_publishing_org</p>
+							<p class="text-muted"><small>Date and Authors' list</small></p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	
+
+
+<%- include ("../partials/footer") %>
