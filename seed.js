@@ -2,6 +2,7 @@ const mongoose   = require('mongoose');
 
 //Requiring DB Models
 const Faculty = require('./models/faculty');
+const MCourse = require('./models/mcourse');
 
 //DB Configurations
 mongoose.connect('mongodb://localhost:27017/deptWebApp')
@@ -14,7 +15,7 @@ mongoose.connect('mongodb://localhost:27017/deptWebApp')
     })
 
 
-const seedData = [
+const fData = [
     {
         uid: 'muj00001',
         suffix: 'Mrs.',
@@ -77,9 +78,47 @@ const seedData = [
     }
 ]
 
-const seedDB = async () => {
+const mcData = [
+    {
+        cid: 'CC1101',
+        cname: 'XYZ',
+        credits: 3,
+        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, excepturi.',
+        sem: 'I'
+    },
+    {
+        cid: 'CC1201',
+        cname: 'XYZ',
+        credits: 3,
+        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, excepturi.',
+        sem: 'II'
+    },
+    {
+        cid: 'CC2101',
+        cname: 'XYZ',
+        credits: 4,
+        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, excepturi.',
+        sem: 'III'
+    },
+    {
+        cid: 'CC2201',
+        cname: 'XYZ',
+        credits: 4,
+        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, excepturi.',
+        sem: 'IV'
+    },
+    {
+        cid: 'CC3101',
+        cname: 'XYZ',
+        credits: 4,
+        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, excepturi.',
+        sem: 'V'
+    }
+]
+
+const fDB = async () => {
     await Faculty.deleteMany({})
-    Faculty.insertMany(seedData)
+    Faculty.insertMany(fData)
     .then(res => {
         console.log(res)
     })
@@ -88,4 +127,16 @@ const seedDB = async () => {
     })
 }
 
-seedDB();
+const mcDB = async () => {
+    await MCourse.deleteMany({})
+    MCourse.insertMany(mcData)
+    .then(res => {
+        console.log(res)
+    })
+    .catch(err => {
+        console.log(err)
+    })
+}
+
+fDB();
+mcDB();

@@ -182,8 +182,21 @@ MongoDB (Schemas)
     - Student Projects
     - News and Articles
 
-2) 
+2) Core Subjects Schema
 
+    - Course Code
+    - Course Name
+    - Course Credits
+    - Desc.
+    - Semester mapping
+
+3) Labs Course Schema
+
+    - Course Code
+    - Course Name
+    - Course Credits
+    - Desc.
+    - Semester Mapping
 
 
 
