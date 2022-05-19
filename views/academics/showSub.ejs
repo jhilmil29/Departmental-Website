@@ -1,0 +1,75 @@
+<%- include ("../partials/header") %>
+
+
+<div class="container my-3 mb-5">
+	<div class="card">
+		<div class="card-body">
+			<h2 class="card-title"><%= mcourse.cname %></h2>
+			<p class="card-text my-0"><small class="text-muted"><%= mcourse.cid %></small></p>
+			<p class="card-text my-0"><small class="text-muted"><%= mcourse.school %></small></p>
+			<p class="card-text mt-2"><%= mcourse.desc %> </p>
+			<p class="card-text">
+				<small class="text-muted">
+					<ul>
+						<li>Credits offered: <strong><%= mcourse.credits %></strong></li>
+						<li>Semester: <%= mcourse.sem %></li>
+					</ul>
+				</small>
+			</p>
+		</div>
+	</div>
+</div>
+  
+<div class="card mx-3 mb-5">
+<h5 class="card-header">Student Resources</h5>
+<div class="card-body">
+    <p class="card-text" style="text-align: justify;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque laboriosam adipisci eos et molestiae fugiat magni odio autem aperiam recusandae praesentium, in amet soluta distinctio ipsam deleniti rem. Atque fugiat ipsum, id laborum cumque repudiandae laboriosam temporibus amet maxime omnis consequuntur accusamus, magni vitae rerum eveniet deleniti nemo mollitia. Quidem!</p>
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+
+    <div class="col col-lg-4 col-md-12">
+        <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Course handout<a class="float-end btn btn-sm btn-outline-danger" href="../../files/demoDoc.pdf" target="_blank">View</a></h5>
+        </div>
+        </div>
+    </div>
+    
+    <div class="col col-lg-4 col-md-12">
+        <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Topic 1<a class="float-end btn btn-sm btn-outline-danger" href="../../files/demoDoc.pdf" target="_blank">View</a></h5>
+        </div>
+        </div>
+    </div>
+
+    <div class="col col-lg-4 col-md-12">
+        <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Topic 2<a class="float-end btn btn-sm btn-outline-danger" href="../../files/demoDoc.pdf" target="_blank">View</a></h5>
+        </div>
+        </div>
+    </div>
+
+		<div class="col col-lg-4 col-md-12">
+			<div class="card">
+			<div class="card-body">
+					<h5 class="card-title">Topic 3<a class="float-end btn btn-sm btn-outline-danger" href="../../files/demoDoc.pdf" target="_blank">View</a></h5>
+			</div>
+			</div>
+	</div>
+
+	<div class="col col-lg-4 col-md-12">
+			<div class="card">
+			<div class="card-body">
+					<h5 class="card-title">Topic 4<a class="float-end btn btn-sm btn-outline-danger" href="../../files/demoDoc.pdf" target="_blank">View</a></h5>
+			</div>
+			</div>
+	</div>
+
+    </div>
+</div>
+</div>
+
+
+
+<%- include ("../partials/footer") %>

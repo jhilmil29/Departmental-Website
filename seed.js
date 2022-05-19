@@ -81,35 +81,35 @@ const fData = [
 const mcData = [
     {
         cid: 'CC1101',
-        cname: 'XYZ',
+        cname: 'XYZ1',
         credits: 3,
         desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, excepturi.',
         sem: 'I'
     },
     {
         cid: 'CC1201',
-        cname: 'XYZ',
+        cname: 'XYZ2',
         credits: 3,
         desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, excepturi.',
         sem: 'II'
     },
     {
         cid: 'CC2101',
-        cname: 'XYZ',
+        cname: 'XYZ3',
         credits: 4,
         desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, excepturi.',
         sem: 'III'
     },
     {
         cid: 'CC2201',
-        cname: 'XYZ',
+        cname: 'XYZ4',
         credits: 4,
         desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, excepturi.',
         sem: 'IV'
     },
     {
         cid: 'CC3101',
-        cname: 'XYZ',
+        cname: 'XYZ5',
         credits: 4,
         desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, excepturi.',
         sem: 'V'
