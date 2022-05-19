@@ -24,7 +24,8 @@ const courseSchema = new mongoose.Schema({
     },
     category: {
         type: String,
-        enum: ['subject', 'lab', 'pe']
+        enum: ['SUBJECT', 'LAB', 'PE'],
+        uppercase: true
     }
 });
 

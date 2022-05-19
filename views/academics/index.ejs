@@ -9,14 +9,14 @@
 </div>
 
 
-<div class="card mx-3 mb-5">
+<div class="card mx-3 mb-5" id="courses">
   <h5 class="card-header">Program Courses</h5>
   <div class="card-body">
     <p class="card-text" style="text-align: justify;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas vitae placeat ea temporibus, aut excepturi deleniti corporis consequuntur dolorem consequatur amet adipisci repudiandae recusandae rerum omnis maiores nisi quibusdam. Illo illum perspiciatis blanditiis harum iste pariatur esse, saepe natus dolorem.</p>
     <div class="row row-cols-1 row-cols-md-4 g-4">
       
       <% for (let course of courses) { %> 
-        <% if (course.category === 'subject') { %> 
+        <% if (course.category === 'SUBJECT') { %> 
         <div class="col">
         <div class="card">
           <img src="../images/demo.jpg" style="height: 200px" class="card-img-top" alt="...">
@@ -47,7 +47,7 @@
     <div class="row row-cols-1 row-cols-md-4 g-4">
       
       <% for (let course of courses) { %> 
-        <% if (course.category === 'lab') { %> 
+        <% if (course.category === 'LAB') { %> 
         <div class="col">
         <div class="card">
           <img src="../images/demo.jpg" style="height: 200px" class="card-img-top" alt="...">
@@ -78,7 +78,7 @@
     <div class="row row-cols-1 row-cols-md-4 g-4">
       
       <% for (let course of courses) { %> 
-        <% if (course.category === 'pe') { %> 
+        <% if (course.category === 'PE') { %> 
         <div class="col">
         <div class="card">
           <img src="../images/demo.jpg" style="height: 200px" class="card-img-top" alt="...">
@@ -102,7 +102,7 @@
 </div>
 
 
-<div class="card mx-3 mb-5">
+<div class="card mx-3 mb-5" id="curriculum">
   <h5 class="card-header">Announcements</h5>
   <div class="card-body">
     <!-- <h5 class="card-title">Program Overview</h5> -->

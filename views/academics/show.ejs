@@ -5,7 +5,7 @@
 	<div class="card">
 		<div class="card-body">
 			<h2 class="card-title"><%= course.cname %></h2>
-			<p class="card-text my-0"><small class="text-muted"><%= course.cid %></small></p>
+			<p class="card-text my-0"><small class="text-muted"><%= `${course.cid}, ${course.category}` %></small></p>
 			<p class="card-text my-0"><small class="text-muted"><%= course.school %></small></p>
 			<p class="card-text mt-2"><%= course.desc %> </p>
 			<p class="card-text">
@@ -71,5 +71,7 @@
 </div>
 
 
-
+<script>
+  document.title = "CCE | Program | <%= course.cname%>";
+</script>
 <%- include ("../partials/footer") %>

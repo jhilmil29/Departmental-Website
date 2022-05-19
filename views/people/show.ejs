@@ -18,7 +18,7 @@
 							</ul>
 						</small>
 					</p>
-					<a class="btn btn-outline-danger " href="/people/<%=faculty._id%>/edit" role="button">Edit</a>
+					<!-- <a class="btn btn-outline-danger " href="/people/<%=faculty._id%>/edit" role="button">Edit</a> -->
 				</div>
 			</div>
 			<div class="col-md-4">
@@ -223,5 +223,7 @@
 	</div>
 	
 
-
+	<script>
+		document.title = "CCE | Faculty | <%= faculty.suffix %> <%= faculty.fName %> <%= faculty.lName %>";
+	</script>
 <%- include ("../partials/footer") %>
