@@ -189,14 +189,7 @@ MongoDB (Schemas)
     - Course Credits
     - Desc.
     - Semester mapping
-
-3) Labs Course Schema
-
-    - Course Code
-    - Course Name
-    - Course Credits
-    - Desc.
-    - Semester Mapping
+    - Category [subject, lab, pe]
 
 
 

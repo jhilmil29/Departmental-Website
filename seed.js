@@ -2,7 +2,7 @@ const mongoose   = require('mongoose');
 
 //Requiring DB Models
 const Faculty = require('./models/faculty');
-const MCourse = require('./models/mcourse');
+const Course = require('./models/course');
 
 //DB Configurations
 mongoose.connect('mongodb://localhost:27017/deptWebApp')
@@ -78,41 +78,158 @@ const fData = [
     }
 ]
 
-const mcData = [
+const cData = [
     {
         cid: 'CC1101',
         cname: 'XYZ1',
         credits: 3,
         desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, excepturi.',
-        sem: 'I'
+        sem: 'I',
+        category: 'subject'
     },
     {
         cid: 'CC1201',
         cname: 'XYZ2',
         credits: 3,
         desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, excepturi.',
-        sem: 'II'
+        sem: 'II',
+        category: 'subject'
     },
     {
         cid: 'CC2101',
         cname: 'XYZ3',
         credits: 4,
         desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, excepturi.',
-        sem: 'III'
+        sem: 'III',
+        category: 'subject'
     },
     {
         cid: 'CC2201',
         cname: 'XYZ4',
         credits: 4,
         desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, excepturi.',
-        sem: 'IV'
+        sem: 'IV',
+        category: 'subject'
     },
     {
-        cid: 'CC3101',
-        cname: 'XYZ5',
+        cid: 'CC2120',
+        cname: '1XYZ',
+        credits: 1,
+        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, excepturi.',
+        sem: 'III',
+        category: 'lab'
+    },
+    {
+        cid: 'CC2220',
+        cname: '2XYZ',
+        credits: 1,
+        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, excepturi.',
+        sem: 'IV',
+        category: 'lab'
+    },
+    {
+        cid: 'CC3132',
+        cname: '3XYZ',
+        credits: 1,
+        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, excepturi.',
+        sem: 'V',
+        category: 'lab'
+    },
+    {
+        cid: 'CC3140',
+        cname: '1 1 XYZ',
         credits: 4,
         desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, excepturi.',
-        sem: 'V'
+        sem: 'V',
+        category: 'pe'
+    },
+    {
+        cid: 'CC3240',
+        cname: '1 2 XYZ',
+        credits: 4,
+        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, excepturi.',
+        sem: 'VI',
+        category: 'pe'
+    },
+    {
+        cid: 'CC4140',
+        cname: '1 3 XYZ',
+        credits: 4,
+        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, excepturi.',
+        sem: 'VII',
+        category: 'pe'
+    },
+    {
+        cid: 'CC4141',
+        cname: '1 4 XYZ1',
+        credits: 4,
+        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, excepturi.',
+        sem: 'VII',
+        category: 'pe'
+    },
+    {
+        cid: 'CC3141',
+        cname: '2 1 XYZ',
+        credits: 4,
+        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, excepturi.',
+        sem: 'V',
+        category: 'pe'
+    },
+    {
+        cid: 'CC3241',
+        cname: '2 2 XYZ',
+        credits: 4,
+        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, excepturi.',
+        sem: 'VI',
+        category: 'pe'
+    },
+    {
+        cid: 'CC4142',
+        cname: '2 3 XYZ',
+        credits: 4,
+        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, excepturi.',
+        sem: 'VII',
+        category: 'pe'
+    },
+    {
+        cid: 'CC4143',
+        cname: '2 4 XYZ1',
+        credits: 4,
+        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, excepturi.',
+        sem: 'VII',
+        category: 'pe'
+    },
+    {
+        cid: 'CC3142',
+        cname: '3 1 XYZ',
+        credits: 4,
+        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, excepturi.',
+        sem: 'V',
+        category: 'pe'
+    },
+    {
+        cid: 'CC3242',
+        cname: '3 2 XYZ',
+        credits: 4,
+        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, excepturi.',
+        sem: 'VI',
+        category: 'pe'
+    },
+    {
+        cid: 'CC4144',
+        cname: '3 3 XYZ',
+        credits: 4,
+        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, excepturi.',
+        sem: 'VII',
+        category: 'pe'
+    },
+    {
+        cid: 'CC4145',
+        cname: '3 4 XYZ1',
+        credits: 4,
+        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, excepturi.',
+        sem: 'VII',
+        category: 'pe'
     }
 ]
 
@@ -127,9 +244,9 @@ const fDB = async () => {
     })
 }
 
-const mcDB = async () => {
-    await MCourse.deleteMany({})
-    MCourse.insertMany(mcData)
+const cDB = async () => {
+    await Course.deleteMany({})
+    Course.insertMany(cData)
     .then(res => {
         console.log(res)
     })
@@ -139,4 +256,4 @@ const mcDB = async () => {
 }
 
 fDB();
-mcDB();
+cDB();

@@ -10,29 +10,30 @@
 
 
 <div class="card mx-3 mb-5">
-  <h5 class="card-header">Program List</h5>
+  <h5 class="card-header">Program Courses</h5>
   <div class="card-body">
     <p class="card-text" style="text-align: justify;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas vitae placeat ea temporibus, aut excepturi deleniti corporis consequuntur dolorem consequatur amet adipisci repudiandae recusandae rerum omnis maiores nisi quibusdam. Illo illum perspiciatis blanditiis harum iste pariatur esse, saepe natus dolorem.</p>
     <div class="row row-cols-1 row-cols-md-4 g-4">
       
-      <% for (let mcourse of mcourses) { %> 
+      <% for (let course of courses) { %> 
+        <% if (course.category === 'subject') { %> 
         <div class="col">
         <div class="card">
           <img src="../images/demo.jpg" style="height: 200px" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title"><%= mcourse.cname %></h5>
+            <h5 class="card-title"><%= course.cname %></h5>
             <p class="card-text">
-              <%= mcourse.desc %>
+              <%= course.desc %>
               <ul>
-                <li>Course Code: <strong><%= mcourse.cid %></strong></li>
-                <li>Awards: <strong><%= mcourse.credits %> credits</strong></li>
+                <li>Course Code: <strong><%= course.cid %></strong></li>
+                <li>Awards: <strong><%= course.credits %> credits</strong></li>
               </ul>
             </p>
-            <a class="btn btn-sm btn-outline-danger float-end" href="/academics/<%= mcourse._id %> " role="button">More</a>
+            <a class="btn btn-sm btn-outline-danger float-end" href="/academics/<%= course._id %> " role="button">More</a>
           </div>
         </div>
       </div>
-      <% } %> 
+      <% } } %> 
       
     </div>
   </div>
@@ -40,33 +41,63 @@
 
 
 <div class="card mx-3 mb-5">
-  <h5 class="card-header">Labs</h5>
+  <h5 class="card-header">Lab Courses</h5>
   <div class="card-body">
-    <!-- <h5 class="card-title">Program Overview</h5> -->
     <p class="card-text" style="text-align: justify;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas vitae placeat ea temporibus, aut excepturi deleniti corporis consequuntur dolorem consequatur amet adipisci repudiandae recusandae rerum omnis maiores nisi quibusdam. Illo illum perspiciatis blanditiis harum iste pariatur esse, saepe natus dolorem.</p>
-
     <div class="row row-cols-1 row-cols-md-4 g-4">
-      <div class="col">
+      
+      <% for (let course of courses) { %> 
+        <% if (course.category === 'lab') { %> 
+        <div class="col">
         <div class="card">
           <img src="../images/demo.jpg" style="height: 200px" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Lab Courses</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <h5 class="card-title"><%= course.cname %></h5>
+            <p class="card-text">
+              <%= course.desc %>
+              <ul>
+                <li>Course Code: <strong><%= course.cid %></strong></li>
+                <li>Awards: <strong><%= course.credits %> credits</strong></li>
+              </ul>
+            </p>
+            <a class="btn btn-sm btn-outline-danger float-end" href="/academics/<%= course._id %> " role="button">More</a>
           </div>
         </div>
       </div>
-      
-      <div class="col">
-        <div class="card">
-          <img src="../images/demo.jpg" style="height: 200px;" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Lab Courses</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          </div>
-        </div>
-      </div>
+      <% } } %>  
+            
     </div>
-    
+  </div>
+</div>
+
+
+<div class="card mx-3 mb-5">
+  <h5 class="card-header">Program Electives (V - VII Semesters only)</h5>
+  <div class="card-body">
+    <p class="card-text" style="text-align: justify;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas vitae placeat ea temporibus, aut excepturi deleniti corporis consequuntur dolorem consequatur amet adipisci repudiandae recusandae rerum omnis maiores nisi quibusdam. Illo illum perspiciatis blanditiis harum iste pariatur esse, saepe natus dolorem.</p>
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+      
+      <% for (let course of courses) { %> 
+        <% if (course.category === 'pe') { %> 
+        <div class="col">
+        <div class="card">
+          <img src="../images/demo.jpg" style="height: 200px" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title"><%= course.cname %></h5>
+            <p class="card-text">
+              <%= course.desc %>
+              <ul>
+                <li>Course Code: <strong><%= course.cid %></strong></li>
+                <li>Awards: <strong><%= course.credits %> credits</strong></li>
+              </ul>
+            </p>
+            <a class="btn btn-sm btn-outline-danger float-end" href="/academics/<%= course._id %> " role="button">More</a>
+          </div>
+        </div>
+      </div>
+      <% } } %>  
+            
+    </div>
   </div>
 </div>
 

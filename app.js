@@ -6,7 +6,7 @@ const express    = require('express'),
 
 //Requiring DB Models
 const Faculty = require('./models/faculty');
-const MCourse = require('./models/mcourse');
+const Course = require('./models/course');
 
 //DB Configurations
 mongoose.connect('mongodb://localhost:27017/deptWebApp')

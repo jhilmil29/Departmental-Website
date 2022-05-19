@@ -21,8 +21,12 @@ const courseSchema = new mongoose.Schema({
     sem: {
         type: String,
         required: true
+    },
+    category: {
+        type: String,
+        enum: ['subject', 'lab', 'pe']
     }
 });
 
-const MCourse = mongoose.model('MCourse', courseSchema);
-module.exports = MCourse;
+const Course = mongoose.model('Course', courseSchema);
+module.exports = Course;
