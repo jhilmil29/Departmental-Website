@@ -97,7 +97,7 @@ Web Pages
     
     - Overview of MUJ
     - Diversity
-    - Board Of Department
+    - Board Of Management
     - Vision,Mission & Values
     - letter From The HOD
     - Clubs & Societies
